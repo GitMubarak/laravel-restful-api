@@ -24,6 +24,6 @@ Route::get('country/{id}', 'API\CountryController@countryById');
 // Save
 Route::post('country', 'API\CountryController@countrySave');
 // Update
-Route::put('country/{country}', 'API\CountryController@countryUpdate');
+Route::put('country/{id}', 'API\CountryController@countryUpdate');
 // Delete
-Route::delete('country/{country}', 'API\CountryController@countryDelete');
+Route::delete('country/{id}', 'API\CountryController@countryDelete');
