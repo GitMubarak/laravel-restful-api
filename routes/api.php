@@ -18,4 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 */
+// Get Data
 Route::get('country', 'API\CountryController@country');
+Route::get('country/{id}', 'API\CountryController@countryById');
+// Save
+Route::post('country', 'API\CountryController@countrySave');

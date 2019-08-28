@@ -8,6 +8,8 @@ class Country extends Model
 {
     protected $table = "_z_country";
 
+    public $timestamps = false;
+
     protected $fillable = [
         'iso',
         'name',
@@ -19,7 +21,6 @@ class Country extends Model
         'created',
         'register_by',
         'modified',
-        'modified_by',
-        'record_deleted'
+        'modified_by'
     ];
 }
